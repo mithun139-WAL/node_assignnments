@@ -23,6 +23,17 @@
         border-bottom: 2px solid #abab;
         margin: 20px;
       }
+      input[type='submit'] {
+        border: none;
+        padding: 15px;
+        margin: 10px;
+        background-color: brown;
+        color: antiquewhite;
+        border-radius: 7px;
+        width: 150px;
+        margin: auto;
+        margin: 20px;
+      }
       h1 {
         font-variant: small-caps;
         font-weight: 300;
@@ -30,17 +41,6 @@
         margin-bottom: 20px;
         color: rgba(30, 163, 134, 0.733);
         font-size: 45px;
-      }
-      button {
-        border: none;
-        padding: 15px;
-        margin: 10px;
-        background-color: brown;
-        color: antiquewhite;
-        border-radius: 7px;
-        width: 250px;
-        margin: auto;
-        margin: 20px;
       }
       option {
         background-color: burlywood;
@@ -50,16 +50,13 @@
   </head>
   <body>
     <h1>Calculator</h1>
-    <form action="calculate" method="post">
+    <form method="post">
       <input type="number" name="num1" id="num1" placeholder="Enter a number" />
       <input type="number" name="num2" id="num2" placeholder="Enter a number" />
-      <select name="parameter" id="parameter">
-        <option value="add">Add</option>
-        <option value="subtract">Subtract</option>
-        <option value="multiply">Multiplication</option>
-        <option value="divide">Divide</option>
-      </select>
-      <button type="submit">Calculate</button>
+      <input type="submit" formaction="calculate/add" value="Add" />
+      <input type="submit" formaction="calculate/subtract" value="Subtract" />
+      <input type="submit" formaction="calculate/multiply" value="Multiply" />
+      <input type="submit" formaction="calculate/divide" value="Divide" />
     </form>
   </body>
 </html>
