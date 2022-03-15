@@ -1,0 +1,8 @@
+1) Create a Registration form where you can enter username,email,password,dob,city and country.
+on clicking register you have to show all the details in a table to the user. 
+2) write a program that takes 2 numbers as input and a parameter called operation with value as
+add,multiply,divide and subtract. then  you receive these values in the node program,
+do the calculation depending upon what is operation and the return result. 
+you have to show result in a div box.
+
+make sure ur assingment looks good with css.

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      form {
+        width: 500px;
+        margin: auto;
+        box-shadow: 10px 10px 12px 6px rgba(0, 0, 0, 0.2);
+      }
+      input,
+      select {
+        padding: 15px;
+        width: 300px;
+        border: none;
+        border-bottom: 2px solid #abab;
+        margin: 20px;
+      }
+      h1 {
+        font-variant: small-caps;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 20px;
+        color: rgba(30, 163, 134, 0.733);
+        font-size: 45px;
+      }
+      button {
+        border: none;
+        padding: 15px;
+        margin: 10px;
+        background-color: brown;
+        color: antiquewhite;
+        border-radius: 7px;
+        width: 250px;
+        margin: auto;
+        margin: 20px;
+      }
+      option {
+        background-color: burlywood;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <form action="calculate" method="post">
+      <input type="number" name="num1" id="num1" placeholder="Enter a number" />
+      <input type="number" name="num2" id="num2" placeholder="Enter a number" />
+      <select name="parameter" id="parameter">
+        <option value="add">Add</option>
+        <option value="subtract">Subtract</option>
+        <option value="multiply">Multiplication</option>
+        <option value="divide">Divide</option>
+      </select>
+      <button type="submit">Calculate</button>
+    </form>
+  </body>
+</html>
