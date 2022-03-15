@@ -57,30 +57,31 @@ app.get('/calculator', function (req, res) {
   const completePath = path.join(__dirname, 'Assignment2.html');
   res.sendFile(completePath);
 });
-app.post('/calculate', function (req, res) {
+app.post('/calculate/:parameter', function (req, res) {
   console.log(req.body);
   const num1 = parseInt(req.body.num1);
   const num2 = parseInt(req.body.num2);
-  switch (req.body.parameter) {
+  console.log(typeof req.params.parameter);
+  switch (req.params.parameter) {
     case 'add':
       var result = num1 + num2;
       res.send(
-        `The operation is ${req.body.parameter} and the result is ${result}`
+        `The operation is ${req.params.parameter} and the result is ${result}`
       );
     case 'subtarct':
       var result = num1 - num2;
       res.send(
-        `The operation is ${req.body.parameter} and the result is ${result}`
+        `The operation is ${req.params.parameter} and the result is ${result}`
       );
     case 'multiply':
       var result = num1 * num2;
       res.send(
-        `The operation is ${req.body.parameter} and the result is ${result}`
+        `The operation is ${req.params.parameter} and the result is ${result}`
       );
     case 'divide':
       var result = num1 / num2;
       res.send(
-        `The operation is ${req.body.parameter} and the result is ${result}`
+        `The operation is ${req.params.parameter} and the result is ${result}`
       );
   }
 });
