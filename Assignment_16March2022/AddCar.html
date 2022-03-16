@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Add Car</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      h1 {
+        font-variant: small-caps;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 20px;
+        color: rgba(30, 163, 134, 0.733);
+        font-size: 45px;
+      }
+      form {
+        width: 500px;
+        margin: auto;
+        box-shadow: 10px 10px 12px 6px rgba(0, 0, 0, 0.2);
+      }
+      input,
+      select {
+        padding: 15px;
+        width: 300px;
+        border: none;
+        border-bottom: 2px solid #abab;
+        margin: 20px;
+      }
+      option {
+        padding: 10px;
+        background-color: burlywood;
+        color: black;
+      }
+      button {
+        border: none;
+        padding: 15px;
+        margin: 10px;
+        background-color: brown;
+        color: antiquewhite;
+        border-radius: 7px;
+        width: 250px;
+        margin: auto;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Car Rentals</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="/add">Add car</a></li>
+          <li><a href="/show">Show cars</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/login"
+              ><span class="glyphicon glyphicon-log-in"></span> Login</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <form>
+      <h1>Add Car</h1>
+      <input
+        type="text"
+        name="CustomerName"
+        placeholder="Enter Customer Name"
+      />
+      <input type="email" name="email" placeholder="Enter EmailId" />
+      <select name="model">
+        <option value="honda">Honda</option>
+        <option value="mercedez">Mercedez</option>
+        <option value="benz">Benz</option>
+        <option value="maruti">Maruti</option>
+      </select>
+      <input type="color" name="color" placeholder="Select color" value="" />
+      <button type="submit">Add Car</button>
+    </form>
+  </body>
+</html>

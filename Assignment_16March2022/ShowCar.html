@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Show Car</title>
+    <style>
+        h1 {
+        font-variant: small-caps;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 20px;
+        color: rgba(30, 163, 134, 0.733);
+        font-size: 45px;
+      }
+      table,
+      th,
+      td{
+          border: 2px solid dodgerblue;
+          border-collapse: collapse;
+          text-align: center;
+      }
+      th{
+          background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/">Car Rentals</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="/add">Add car</a></li>
+            <li><a href="/show">Show cars</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/userform"
+                ><span class="glyphicon glyphicon-log-in"></span> Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container text-center">
+		<h1 class="my-5">Cars Available</h1>
+		<table class="table mt-5 bg-light">
+			<thead>
+				<tr>
+					<th>NAME</th>
+					<th>EMAIL</th>
+					<th>CAR MODEL</th>
+					<th>CAR COLOR</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Alpha</td>
+					<td>alpha@gmail.com</td>
+					<td>Mercedes</td>
+					<td>Black</td>
+				</tr>
+				<tr>
+					<td>Beta</td>
+					<td>beta@gmail.com</td>
+					<td>Benz</td>
+					<td>White</td>
+				</tr>
+				<tr>
+					<td>Gamma</td>
+					<td>gamma@gmail.com</td>
+					<td>Skoda</td>
+					<td>Blue</td>
+				</tr>
+				<tr>
+					<td>Delta</td>
+					<td>delta@gmail.com</td>
+					<td>Skoda</td>
+					<td>Orange</td>
+				</tr>
+				<tr>
+					<td>Omega</td>
+					<td>omega@gmail.com</td>
+					<td>Maruthi</td>
+					<td>Red</td>
+				</tr>
+			</tbody>
+		</table>
+  </body>
+</html>

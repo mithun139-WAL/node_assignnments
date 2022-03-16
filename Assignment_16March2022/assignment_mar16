@@ -1,0 +1,7 @@
+1) Create a Car rental website where we can add a car in /addcar. 
+in add car form you need to add car model(selectbox) values are honda,mercedez,benz, maruti.customer name,customer email,
+car color(color input)
+
+/showcars --> you have to show cars in a table. you dont need to get data submitted by user. show any data. 
+/login --> create a login form where ppl can enter username and password. if username is smith and password is "abc" then only user is successfully logged in . 
+Note: you need to make UI great and ur code should be perfect.
